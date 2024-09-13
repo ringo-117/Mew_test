@@ -8,15 +8,17 @@ body {
   letter-spacing: 0.05em;
   color: #333333;
   background-color: #ffffff;
+  font-family: "Jost", "dnp-shuei-gothic-gin-std", sans-serif;
 }
 
 /*==============================================================
 　　ヘッダー
 ==============================================================*/
-/* header {
-  width: 100vw;
-  width: 390px;
-} */
+/* ページ内リンク：スクロール位置*/
+#ABOUT {
+  scroll-margin-top: 100px;
+}
+
 
 .header {
   position: fixed;
@@ -101,15 +103,13 @@ body {
   right: -2px;
   font-size: 11px;
   font-weight: bold;
-  transition: 0.5s;
-  opacity: 0;
 }
-.btn p .nav_open{
+.btn .nav_open{
   opacity: 1;
 }
-/* .btn p .nav_close{
+.btn .nav_close{
   opacity: 0;
-} */
+}
 
 .btn.active i:nth-of-type(1){
   transform: translateY(4px) rotate(30deg);
@@ -122,10 +122,12 @@ body {
 
 .btn.active .nav_open{
   opacity: 0;
+  transition: 0.3s;
 }
 
 .btn.active .nav_close{
   opacity: 1;
+  transition: 0.3s;
 }
 
 
@@ -160,12 +162,13 @@ body {
 
 .container .nav_item {
   margin-bottom: 20px;
+  letter-spacing: 0.1em;
 }
 
 .container .main {
   font-size: 16px;
   margin-bottom: 25px;
-  font-weight: 500;
+  font-weight: 600
 }
 
 .container .main_end {
@@ -518,10 +521,12 @@ text {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 45px;
+  letter-spacing: 0.1em;
 }
 
 .photo p {
   line-height: 2em;
+  letter-spacing: 0.15em;
 }
 
 .photo_text {
@@ -556,18 +561,23 @@ text {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 35px;
+  letter-spacing: 0.15em;
 }
 
 .flow_title span {
   margin-right: 25px;
   font-size: 24px;
   font-weight: 500;
-  border-bottom: solid 1px #333333;
+  border-bottom: solid 1.5px #333333;
+  padding-bottom: 5px;
+  /* font-weight: 600; */
+  /* font-family:Arial, Helvetica, sans-serif; */
 }
 
 .flow_text {
   line-height: 2em;
   font-size: 14px;
+  letter-spacing: 0.1em;
 }
 
 .flow_partition {
@@ -590,9 +600,14 @@ text {
   right: 20px;
 }
 
+.pc_img {
+  display: none;
+}
+
 .work ul li {
   margin-bottom: 20px;
   font-size: 16px;
+  letter-spacing: 0.1em;
 }
 
 /*==============================================================
@@ -681,6 +696,8 @@ text {
   padding: 20px;
   position: relative;
   align-content: center;
+  font-size: 14px;
+  letter-spacing: 0.1em;
 }
 
 .INFO button span {
@@ -723,6 +740,7 @@ text {
   top: 50%;
   right: 0.6em;
   box-sizing: border-box;
+  margin-right: 2px;
 }
 
 .INFO a {
@@ -776,12 +794,8 @@ text {
 
 .footer .leaf_4 {
   width: 57px;
-  /* top: -110px; */
   top: 45px;
-  /* right: -300px; */
-  /* right: 30%; */
   left: 80%;
-
 }
 
 .copy {
@@ -815,6 +829,7 @@ text {
 
   .btn{
     margin-right: 10px;
+    right: 40px;
   }
 
   /* メニューのデザイン*/
@@ -864,7 +879,7 @@ text {
   }
 
   /*==============================================================
-　　TOP
+　　TB_TOP
   ==============================================================*/
   .top_text_copy {
     margin-top: 140px;
@@ -946,7 +961,7 @@ text {
   }
 
   /*==============================================================
-　　ABOUT
+　　TB_ABOUT
   ==============================================================*/
   .ABOUT {
     overflow: hidden;
@@ -985,7 +1000,7 @@ text {
   }
 
   /*==============================================================
-　　WORKS
+　　TB_WORKS
   ==============================================================*/
   .works_img {
     width: 550px;
@@ -1035,7 +1050,7 @@ text {
   }
 
   /*==============================================================
-　　INFO
+　　TB_INFO
   ==============================================================*/
   .INFO {
     padding: 120px auto 70px;
@@ -1066,7 +1081,7 @@ text {
   }
 
   /*==============================================================
-　　footer
+　　TB_footer
   ==============================================================*/
   .footprints img {
     width: 247px;
@@ -1078,8 +1093,11 @@ text {
   }
 
   .footer .leaf_4 {
-    width: 77px;
     top: 30px;
+  }
+
+  .footer .leaf_4 img {
+    width: 77px;
   }
 
   .copy {
@@ -1097,6 +1115,68 @@ text {
   　　　PC_HOME
   ==============================================================*/
   /* ==================== ヘッダー ================== */
+  /* メニューのデザイン*/
+  .container {
+    /* position: absolute; */
+    grid-template-rows: 1fr 400px;
+  }
+
+  .container_box {
+    /* padding: 270px 0 0 217px; */
+    /* padding: auto 0 90px; */
+    display: flex;
+    /* align-content: end; */
+    /* margin: 15% 0 0 0; */
+    margin: auto 0 0 0;
+    justify-content: center;
+    padding-top: 200px;
+
+
+
+    /* position: relative;
+    top: auto;
+    bottom: -300px; */
+  }
+
+  .nav_list {
+    padding: 0;
+    margin-left: 185px;
+    margin-right: 430px;
+    height: 350px;
+  }
+
+  .container_img{
+    max-height: 400px;
+  }
+
+  .container_img .footprints {
+    top: auto;
+    bottom: 174px;
+    left: auto;
+    right: 220px;
+  }
+
+  .container_img .leaf_3-4 {
+    top: auto;
+    bottom: 30px;
+    right: 100px;
+  }
+
+  .container_bg {
+    display: none;
+  }
+
+  .nav_img {
+    width: 245px;
+    height: 310px;
+    background-color: #eeeeee;
+    /* margin-left: 217px; */
+  }
+
+
+  /*==============================================================
+　　PC_TOP
+  ==============================================================*/
   .top_pc {
     display: flex;
     width: 100%;
@@ -1172,11 +1252,15 @@ text {
   }
 
   /*==============================================================
-　　ABOUT
+　　PC_ABOUT
   ==============================================================*/
   .ABOUT {
     max-width: 960px;
     margin: 0 auto;
+  }
+
+  .sec_text {
+    margin-top: 200px;
   }
 
   .about_box {
@@ -1191,20 +1275,20 @@ text {
     margin: 0;
   }
 
-  .sec_title {
+  .about_box .sec_title {
     margin: 0;
     margin-right: 100px;
     writing-mode: vertical-rl;
     font-feature-settings: initial;
   }
 
-  .sec_title h2 {
+  .about_box .sec_title h2 {
     text-orientation: upright;
     font-feature-settings: initial;
-    letter-spacing: 0;
+    letter-spacing: 0.2em;
   }
 
-  .sec_title p {
+  .about_box .sec_title p {
     margin: 20px 30px 0 0;
   }
 
@@ -1243,7 +1327,7 @@ text {
 
 
   /*==============================================================
-　　WORKS
+　　PC_WORKS
   ==============================================================*/
   .works_box {
     max-width: 960px;
@@ -1252,11 +1336,11 @@ text {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 105px;
+    position: relative;
   }
 
   .works_box .sec_box {
     display: flex;
-    /* flex-direction: row-reverse; */
     margin: 0;
   }
 
@@ -1267,11 +1351,24 @@ text {
 
   .works_box .sec_title {
     margin: 0;
-    margin-left: 100px;
+    margin-left: 110px;
     text-align: left;
+    writing-mode: vertical-rl;
+    font-feature-settings: initial;
+    position: relative;
+  }
+
+  .works_box .sec_title h2 {
+    text-orientation: upright;
+    font-feature-settings: initial;
+    letter-spacing: 0.2em;
+    margin-right: 42px;
   }
 
   .works_box .sec_title p {
+    position: absolute;
+    top: 5px;
+    right: 0;
     margin: 0;
   }
 
@@ -1279,6 +1376,149 @@ text {
     width: 430px;
     height: 530px;
   }
+
+  .pc_img {
+    display: block;
+  }
+
+  .WORKS .leaf_4 {
+    position: absolute;
+    top: 430px;
+    right: 0;
+    transform: rotate( 40deg );
+
+  }
+
+/* ==================== 撮影について ================== */
+
+.partition {
+  margin: 215px 0 48px;
+  width: 45px;
+}
+
+.photo_box {
+  display: flex;
+}
+
+.photo h3 {
+  margin-right: 185px;
+}
+
+.work h3 {
+  font-size: 26px;
+  margin-bottom: 95px;
+}
+
+.photo_text {
+  font-size: 18px;
+}
+
+.photo_detail {
+  font-size: 16px;
+  margin-top: 27px;
+}
+
+/* ==================== ご依頼から納品までの流れ ================== */
+.flow_text_box {
+  display: flex;
+  width: 530px;
+  justify-content: space-between;
+}
+
+.flow_item {
+  padding: 75px 60px;
+}
+
+.flow_title {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.flow_title span {
+  font-size: 30px;
+}
+
+.flow_text {
+  width: 280px;
+  font-size: 16px;
+  align-content: center;
+}
+
+.flow_img_1 img {
+  width: 145px;
+  margin: 0;
+  margin-right: 40px;
+}
+
+/* ==================== 料金について ================== */
+.price_box {
+  display: flex;
+}
+
+.price h3 {
+  margin-right: 185px;
+}
+
+.work ul {
+  margin-top: 10px;
+}
+
+/* .work ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+} */
+
+.sp-tb_img {
+  display: none;
+}
+
+/*==============================================================
+　　PC_INFO
+==============================================================*/
+.INFO h2 {
+  font-size: 55px;
+}
+
+.info dt{
+  font-size: 16px;
+}
+
+.info dd{
+  font-size: 16px;
+}
+
+/* ==================== 足跡BG ================== */
+.footprints {
+  top: 135px;
+  left: 20%;
+}
+
+.footprints_bg .leaf_3 {
+  position: absolute;
+  top: 75px;
+  right: 10%;
+  transform: rotate(-10deg);
+}
+
+.footprints_bg .leaf_3 img {
+  width: 62px;
+}
+
+/*==============================================================
+　　PC_footer
+==============================================================*/
+.footer .leaf_4 {
+  top: -60px;
+  left: 75%;
+}
+
+.copy {
+  padding-top: 65px;
+  margin-bottom: 85px;
+}
+
+
+
 
 
 
