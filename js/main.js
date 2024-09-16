@@ -32,18 +32,9 @@ $('#nav_list a[href]').on('click', function(event) {
     $('.btn').trigger('click');
 });
 
-// ページ内スクロール
-// $('a[href^="#"]').click(function () {
-// 	const speed = 600;
-// 	let href = $(this).attr("href");
-// 	let target = $(href == "#" || href == "" ? "html" : href);
-// 	let position = target.offset().top;
-// 	$("body,html").animate({ scrollTop: position }, speed, "swing");
-// 	return false;
-//   });
 
-  $(function(){
-	var headerHeight = $('header').outerHeight();
+$(function(){
+	var headerHeight = $('header').outerHeight() + 150;
 	var urlHash = location.hash;
 	if(urlHash) {
 	  $('body,html').stop().scrollTop(0);
@@ -61,6 +52,7 @@ $('#nav_list a[href]').on('click', function(event) {
 	  return false;
 	});
   });
+
 
 
 
