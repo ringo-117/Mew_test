@@ -130,8 +130,9 @@ body {
 
 /* メニューのデザイン*/
 .container {
+  /* position: relative; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -184,6 +185,7 @@ body {
   min-height: 250px;
   position: relative;
   align-content: end;
+  /* position: absolute; */
 }
 
 .container_img figure {
@@ -206,6 +208,8 @@ body {
   background-color: #F2F0EC;
 }
 
+
+
 /*------------------- SNS　------------------------*/
 .sns figure img{
   position: absolute;
@@ -226,7 +230,7 @@ body {
 }
 
 .TOP_box {
-  padding: 145px 24px 0px 14px;
+  padding: 145px 24px 0px 24px;
 }
 
 .sec_bg {
@@ -234,9 +238,14 @@ body {
 }
 
 .top_1 {
-  display: flex;
-  justify-content: right;
+  display: grid;
+  grid-template-columns: auto 60vw;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* margin-left: 5%; */
+  justify-items: flex-end;
 }
+
 
 .top_2 {
   position: relative;
@@ -247,8 +256,9 @@ body {
 }
 
 .top_text_copy {
-  margin: 0 auto;
+  /* padding: 0 auto; */
   margin-top: 70px;
+  justify-self: center;
 }
 
 .top_text_1 p {
@@ -277,8 +287,11 @@ body {
 
 
 .top_img_1 {
-  width: 229px;
-  height: 286px;
+  /* width: 229px; */
+  /* height: 286px; */
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
   background-color: #eeeeee;
 }
 .top_img_1 img {
@@ -287,8 +300,11 @@ body {
   object-fit: cover;
 }
 .top_img_2 {
-  width: 207px;
-  height: 148px;
+  /* width: 207px;
+  height: 148px; */
+  width: 60%;
+  height: 100%;
+  aspect-ratio: 3 / 2;
   background-color: #eeeeee;
   margin-top: 60px;
 }
@@ -844,15 +860,20 @@ body {
   }
 
   .top_img_1 {
-    width: 60%;
+    width: 100%;
+    /* max-width: 500px; */
     height: 100%;
     aspect-ratio: 4 / 5;
   }
   .top_img_2 {
-    width: 45%;
+    /* width: 60vw;
     height: 100%;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 3 / 2; */
     margin-top: 116px;
+  }
+
+  .top_1 {
+    grid-template-columns: auto 60%;
   }
 
   .top_2 {
@@ -1145,6 +1166,7 @@ body {
   }
 
   .top_1 {
+    grid-template-columns: auto 55%;
     width: 75%;
     height: 30%;
   }
