@@ -143,10 +143,6 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   pointer-events: none;
-  /* display: grid;
-  grid-template-rows: auto auto; */
-  /* align-content: end; */
-  /* min-height: 550px; */
 }
 
 .container.active{
@@ -160,8 +156,9 @@ body {
 
 .container_all {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 100vh;
+  display: grid;
+  align-content: space-between;
 }
 
 .container_box {
@@ -205,28 +202,30 @@ body {
 }
 
 .container_img {
-  min-height: 250px;
+  /* height: auto; */
+  /* min-height: 250px; */
   position: relative;
-  align-content: end;
+  /* align-content: end; */
 }
 
-.container_img figure {
+.container_all .container_img figure {
   position: absolute;
 }
 
-.container_img .footprints {
-  top: -45px;
+.container_all .footprints {
+  top: -100px;
   right: 60px;
 }
 
-.container_img .leaf_3-4 {
-  top: 90px;
+.container_all .leaf_3-4 {
+  /* top: 90px; */
   right: 30px;
 }
 
 .container_bg {
   width: 100%;
   height: 80px;
+  bottom: 0;
   background-color: #F2F0EC;
 }
 
@@ -847,7 +846,7 @@ body {
   }
 
   .container_img .leaf_3-4 {
-    top: 50px;
+    top: -30px;
     right: 65px;
   }
 
