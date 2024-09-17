@@ -44,15 +44,15 @@ body {
 }
 
 .header_logo figure {
-  width: 72px;
-  border-radius: 50px;
+  width: 70px;
+  /* border-radius: 50px; */
 }
 
 .header_logo figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50px;
+  /* border-radius: 50px; */
 }
 
 .btn{
@@ -141,12 +141,17 @@ body {
   transition: .5s;
   opacity: 0;
   overflow: hidden;
-  overflow-Y: scroll;
+  overflow-y: scroll;
   pointer-events: none;
   /* display: grid;
   grid-template-rows: auto auto; */
   /* align-content: end; */
-  min-height: 550px;
+  /* min-height: 550px; */
+}
+
+.container.active{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav_list {
@@ -161,12 +166,6 @@ body {
 
 .container_box {
   z-index: 997;
-}
-
-
-.container.active{
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .container .nav_item {
@@ -196,7 +195,7 @@ body {
 
 .container_imgs {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   top: auto;
   left: 0;
