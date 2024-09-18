@@ -218,8 +218,8 @@ body {
 /*------------------- SNS　------------------------*/
 .sns figure img{
   position: absolute;
-  width: 20px;
-  left: 20px;
+  width: 35px;
+  right: 30px;
   bottom: 30px;
   position: fixed;
   z-index: 997;
@@ -840,7 +840,7 @@ body {
 
   /*------------------- SNS　------------------------*/
   .sns figure img{
-    left: 40px;
+    right: 40px;
     bottom: 40px;
   }
 
