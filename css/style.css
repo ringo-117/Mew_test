@@ -212,17 +212,30 @@ body {
   bottom: 0;
   background-color: #F2F0EC;
 }
+/*------------------- container_SNS　------------------------*/
+.container_box .sns_box {
+  display: flex;
+}
+
+.container_box .sns img {
+  width: 25px;
+ }
+
+ .container_box .sns_left {
+  margin-right: 16px;
+ }
+
 
 
 
 /*------------------- SNS　------------------------*/
-.sns figure img{
+.main_sns figure img{
   position: absolute;
   width: 35px;
   right: 30px;
   bottom: 30px;
   position: fixed;
-  z-index: 997;
+  z-index: 990;
 }
 
 
@@ -1154,7 +1167,6 @@ body {
     height: 100%;
     object-fit: cover;
   }
-
 
   /*==============================================================
 　　PC_TOP
