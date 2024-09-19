@@ -779,8 +779,11 @@ body {
 
 .footer .leaf_4 {
   width: 57px;
-  top: 45px;
-  left: 80%;
+  /* top: 45px; */
+  /* left: 80%; */
+  top: -30px;
+  left: 72%;
+  transform: rotate(40deg);
 }
 
 .copy {
@@ -1098,7 +1101,8 @@ body {
   }
 
   .footer .leaf_4 {
-    top: 30px;
+    top: -40px;
+    transform: rotate(0deg);
   }
 
   .footer .leaf_4 img {
