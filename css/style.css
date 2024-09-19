@@ -231,8 +231,8 @@ body {
 /*------------------- SNS　------------------------*/
 .main_sns figure img{
   position: absolute;
-  width: 35px;
-  right: 30px;
+  width: 50px;
+  right: 20px;
   bottom: 30px;
   position: fixed;
   z-index: 990;
@@ -659,6 +659,11 @@ body {
   align-items: center;
 }
 
+.box_04 .gmail:hover {
+  opacity: 0.7;
+  transition: transform 0.3s;
+}
+
 .box_05{
   grid-area: box5;
   display: flex;
@@ -729,7 +734,7 @@ body {
   margin-right: 2px;
 }
 
-.INFO a {
+.INFO .reservation_link {
   display: grid;
   width: 275px;
   margin: 0 auto;
@@ -852,7 +857,7 @@ body {
 
 
   /*------------------- SNS　------------------------*/
-  .sns figure img{
+  .main_sns figure img{
     right: 40px;
     bottom: 40px;
   }
@@ -1070,7 +1075,7 @@ body {
     margin-right: 75px;
   }
 
-  .INFO a {
+  .INFO .reservation_link {
     margin-bottom: 40px;
   }
 
